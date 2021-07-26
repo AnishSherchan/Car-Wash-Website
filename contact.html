@@ -21,7 +21,7 @@
             #Cover{
                 width: 100%;
                 height: 50vh;
-                background-image: url(./Images/Audi.JPG);
+                background-image: url(./Images/contact.jpg);
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -31,9 +31,10 @@
             }
             .Intro{
                 color:rgb(253, 245, 245);
+                font-size: 5vh;
             }
 
-            li a,.card-title{
+            li a{
                 font-size: 1.5rem;
                 font-family: "Red Hat Display";
             }
@@ -41,29 +42,19 @@
                 font-size: 1.5rem;
                 font-family: "Red Hat Display";
             }
-            .Sub-topic{
-                padding-top: 4%;
-            }
             .Best-Intro{
                 background-color:rgb(234,234,234);
                 height: fit-content;
             }
-            .Best-Intro-p{
-                padding-top: 1%;
-            }
-            .services{
-                background-color: rgb(38,38,38);
-                height: fit-content;
-            }
-            .Price{
-                color: rgb(255,38,38) ;
-                font-size: 4vh;
-            }
-            .card-title{
-                font-size: 3vh;
-            }
             .findus{
-                background-color:rgb(234,234,234);
+                color: white;
+                background-color: rgb(38,38,38);
+            }
+            label,input{
+                font-family: "Red Hat Display";
+            }
+            .modal-title{
+                color: black;
             }
         </style>
             <nav class="navbar navbar-expand-lg navbar-light" style="z-index: 2; position:sticky; top: 0%; background-color: rgb(234,234,234);">
@@ -75,10 +66,10 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarScroll"">
                             <ul class="navbar-nav">
                                 <li class="nav-item p-lg-5">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item p-lg-5">
-                                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                                <a class="nav-link active" aria-current="page" href="#">Contact</a>
                                 </li>
                             </ul>
                     </div>
@@ -89,44 +80,42 @@
 <body>
     <div class="d-flex justify-content-center d-flex align-items-center" id="Cover">
         <div class="container-fluid">
-            <h1 class="Intro text-center">A moment of shine.</h1>
+            <h1 class="Intro text-center">Contact Us</h1>
         </div>
     </div>
     <div class="Best-Intro">
-        <h1 class="Sub-topic text-center pt-4 pb-4" >Best Car Wash in The City</h1>
-        <div class="container mx-auto" style="width: 100%;">
-            <p class="Best-Intro-p text-center pb-5 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nisi!</p>
-        </div>    
-    </div>
-    <div class="services">
-        <div class="Title-Service container">
-            <h1 class="Intro text-center pt-5">Our Services</h1>
-            <div class="container-fluid">
-                <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col pt-5 p-lg-5">
-                      <div class="card">
-                        <img src="./Images/Internal.png" class="img-fluid">
-                        <div class="card-body">
-                          <h5 class="card-title">Gold Wash (Interior & Exterior)</h5>
-                          <p class="Price text-end">From: Rs 650</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col pt-5 p-lg-5">
-                      <div class="card" ">
-                          <div>
-                              <img src="./Images/Internal.png" class="img-fluid"">
-                          </div>
-                        <div class="card-body">
-                          <h5 class="card-title">Foam Wash</h5>
-                          <p class="Price text-end">From: Rs 650</p>
-                        </div>
-                      </div>
-                    </div>
+        <h1 class="Sub-topic text-center pt-4 pb-4" >Get in Touch</h1>
+        <div class="container mx-auto" style="width: 60%;">
+            <form>
+                <div>
+                  <label for="validationCustom01" class="form-label">Name</label>
                 </div>
-            </div>
-            <div class="container-sm d-flex justify-content-evenly align-items-center flex-wrap pt-4 pb-4">
-                <button class="btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"">Book Now</button>
+                <div class="row mb-4">
+                    <div class="col">
+                      <input type="text" class="form-control opacity-75" placeholder="Full Name" for="validationCustom02" id="validationCustom02" required aria-label="First name">
+                    </div>
+                    
+                  </div>
+                <div class="mb-4">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" for="validationCustom02" id="validationCustom02" placeholder="abcd@example.com" aria-describedby="emailHelp" required>
+                  <div id="emailHelp" class="form-text text-secondary">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-4">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" placeholder="Message Here!!" id="exampleFormControlTextarea1" rows="3" for="validationCustom01" id="validationCustom01" required></textarea>
+                  </div>
+                <button type="submit" class="btn btn-primary mb-4">Submit</button>
+              </form>
+        </div>    
+        <div class="container">
+            <h2 class="text-center p-3">Call us on +977 XXXXXXXXX</h2>
+        </div>
+        <div class="container p-4 d-flex flex-column justify-content-center align-items-center">
+            <h1>Location-Map</h1>
+            <div class="container d-flex align-items-center justify-content-center p-3" style="width: 100%">
+                <iframe width="400%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Downtown%20carwash%20station%20Kathmandu%2044600+()&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
             </div>
         </div>
     </div>
