@@ -1,0 +1,6 @@
+Here is the frontend design build for a car wash company named as Downtown Car Wash which is located in Samakushi.
+The whole frontend design of the website is created using html Css and bootstarp. The webpage is fully responsive.
+
+Created by Anish Sherchan
+
+All Right Reserved
